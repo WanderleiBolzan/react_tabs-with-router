@@ -48,7 +48,9 @@
   "scripts": {
     "start": "mate-scripts start -l",
     "build": "mate-scripts build",
-    "test": "mate-scripts test -l",
+    "test": "cypress run --component",
+    "test:component": "cypress open --component",
+    "test:e2e": "cypress open --e2e",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "lint-js": "mate-scripts lint -j",
     "lint-css": "mate-scripts lint -s",
